@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&family=Smythe&display=swap');
+
+body, html{
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+
+/*#region HEADER*/
+header{
+    background-image: url("/resources/burger.png");
+    background-position-y: 65%;
+    height: 170px;
+    font-family: 'Smythe', sans-serif;
+}
+header>h1{
+    padding: 45px 0 10px 45px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+header>p{
+    padding: 0 0 0 45px;
+    letter-spacing: 1px;
+}
+header>h1,
+header>p{
+    margin: 0;
+    color: white;
+}
+/*#endregion*/
+
+.positioned-section{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.menu-section{
+    background-color: white;
+}
+
+
+
+/*#region MODAL WINDOW*/
+
+.modal-window{
+    display: none; /*inline*/
+    position: fixed;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    width: 525px;
+    background-color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.151);
+    z-index: 999;
+}
+
+.modal-window>h3{
+    text-align: center;
+    margin: 35px auto;
+    font-size: 24px;
+}
+
+#consent-form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#consent-form>input{
+    margin: 10px 25px;
+    padding: 20px;
+    border: #757575 1.5px solid;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.submit-btn{
+    width:475px;
+    margin: 20px auto;
+    height: 60px;
+    background-color: #16DB99;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border:none;
+}
+
+.submit-btn:hover{
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/*#endregion*/
+
+
+/*#region GENERATED ORDER */
+
+.order-section{
+    background-color: white;
+    padding: 45px 0;
+}
+
+.order-section>h3{
+    margin:0;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.order-positions>h4{
+    margin-top: 0px;
+    display: inline;
+}
+
+.order-row{
+    margin: 10px 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-price-row{
+    margin: 10px 45px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px #393333 solid;
+}
+
+.total-price-row>h3{
+    margin: 0;
+}
+
+.remove-button-span{
+    color: #BBBBBB;
+    font-size: 12px;
+}
+.remove-button-span:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.complete-order-btn-container{
+    margin: 50px auto 0 auto;
+    width: 510px;
+    display: flex;
+    justify-content: center;
+}
+
+.complete-order-btn{
+    width:100%;
+    height: 60px;
+    background-color: #16DB99;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border:none;
+}
+.complete-order-btn:hover{
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+/*#endregion*/
+
+/*#region GENERATED DISHES */
+.dish{
+    padding: 45px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px #D2D2D2 solid;
+    width: 510px;
+}
+.dish-text{
+    min-width: 350px;
+}
+.dish-text>p{
+    margin: 4px 0;
+}
+.p-dish-name{
+    font-size: 22px;
+    font-weight: bold;
+}
+.p-dish-price{
+    font-weight: bold;
+}
+.p-dish-composition{
+    color:#8B8B8B;
+    font-size: 12px;
+}
+.add-btn{
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    border: #DEDEDE 1.5px solid;
+    background-color: white;
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    color: #3C3C3C;
+    margin-top: 15px;
+}
+.dish-img{
+    width: 75px;
+    height: 75px;
+    display: inline;
+}
+.add-btn:hover{
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+/*#endregion */

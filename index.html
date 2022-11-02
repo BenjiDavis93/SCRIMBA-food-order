@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="/css/main_styles.css">
+    <link rel="shortcut icon" href="#">
+    <title>Food ordering app</title>
+</head>
+
+<body>
+    <header class="positioned-section">
+        <h1>Jimmy's Diner</h1>
+        <p>The best burgers and pizzas in town.</p>
+    </header>
+
+    <main>
+
+        <section id="menu-section" class="positioned-section menu-section">
+        </section>
+        
+        <section id="order-section" class="positioned-section order-section">
+        </section>
+
+        <section id="modal-window" class="modal-window">
+            <h3>Enter card details</h3>
+            <form id="consent-form">
+				<input type="text" name="fullName" placeholder="Enter your name" required/>
+				<input type="text" name="cardNumber" placeholder="Enter card number" required/>
+                <input type="text" name="CVV" placeholder="Enter CVV" required/>
+                <button type="submit" id="submit-btn" class="submit-btn">Pay</button>
+            </form>
+        </section>
+
+    </main>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
